@@ -1,0 +1,62 @@
+.icone{
+	max-width: 3vh;
+	margin-right: 3vh;
+}
+
+.flex{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flex > div {
+	margin: 1vw;
+
+}
+
+.cima {
+	width: 15vw;
+	margin-left: 20vw;
+	text-align: center;
+}
+
+p{
+	font-size: 0.9vw;
+}
+
+
+.monte{
+	border: 0.3vh;
+	border-style: solid;
+	border-color: black;
+	
+
+}
+
+.test{
+	background-color: black;
+	color: white;
+
+}
+.direita {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: flex-end;
+}
+
+.direita > div{
+	max-width: 10vw;
+	padding-right: 1vw;
+	padding-left: 1vw;
+	text-align: center;
+	margin-right: 1vw;
+}
+
+.meio{
+	display: flex;
+	justify-content: center;
+}
+
+img.meio{
+	width: 100vw;
+}
