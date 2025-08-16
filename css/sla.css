@@ -1,62 +1,119 @@
-.icone{
-	max-width: 3vh;
-	margin-right: 3vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.flex{
-	display: flex;
-	justify-content: flex-start;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.flex > div {
-	margin: 1vw;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
 
+.icone {
+    max-width: 3rem;
+    margin-right: 1rem;
+}
+
+.navegacao {
+    display: flex;
+    gap: 2rem;
 }
 
 .cima {
-	width: 15vw;
-	margin-left: 20vw;
-	text-align: center;
+    text-align: center;
 }
 
-p{
-	font-size: 0.9vw;
+.cima p {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: font-weight 0.3s ease;
 }
 
-
-.monte{
-	border: 0.3vh;
-	border-style: solid;
-	border-color: black;
-	
-
+.cima p:hover {
+    font-weight: bold;
 }
 
-.test{
-	background-color: black;
-	color: white;
-
-}
 .direita {
-	width: 100vw;
-	display: flex;
-	flex-wrap: wrap; 
-	justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.direita > div{
-	max-width: 10vw;
-	padding-right: 1vw;
-	padding-left: 1vw;
-	text-align: center;
-	margin-right: 1vw;
+.direita > div {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.meio{
-	display: flex;
-	justify-content: center;
+.monte {
+    border: 2px solid black;
+    cursor: pointer;
 }
 
-img.meio{
-	width: 100vw;
+.monte:hover {
+    background-color: black;
+    color: white;
+}
+
+.test {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.test:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.home-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    object-fit: contain; 
+}
+
+.meio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.meio img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    text-align: center;
+    padding: 2rem;
+}
+
+.info h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #333;
 }
